@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Initiative</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/assets/css/light1.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/global.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/assets/js/apply.js" defer></script>
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/png/favicons/apple-touch-icon.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/png/favicons/favicon-32x32.png"> -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/png/favicons/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+  </head>
+  <body>
+    <h1>Horizon Initiative</h1>
+    <h2>SITE UNDER HEAVY CONSTRUCTION! EXPECT LINKS, IMAGES AND THINGS IN GENERAL TO BE BROKEN FOR A WHILE!</h2>
+    <noscript>
+      <h1>Some features on this website require JavaScript, however, it appears your browser does not support JavaScript or it is disabled. These features will not work without JavaScript!</h1>
+    </noscript>
+    <h3>
+        <a href="/assets/html/posts.html">Posts</a>
+        <a href="/assets/html/settings.html">Settings</a>
+        <a href="https://cloud.disroot.org/apps/forms/s/6mTSiw3d9wrijziHRWzo7Ca3">Send Feedback</a>
+        <a href="https://neocities.org/site/horizon-initiative">Profile</a>
+        <a href="/assets/html/readinglist.html">Recommended Reading List</a>
+        <a rel="me" href="https://mastodon.social/@x3lz">Mastodon</a>
+        <a href="https://brickgameinfo.miraheze.org/wiki/Main_Page">Brick Game Information Wiki</a>
+        <button id="saveBtn">Switch To Dark Mode To Save My Eyes</button>
+        <script>
+          document.getElementById('saveBtn').onclick = function() {
+            const userSettings = {
+              theme: "/assets/css/dark1.css" //document.getElementById('theme').value
+            };
+            localStorage.setItem("userSettings",JSON.stringify(userSettings))
+            console.log('Saved Settings:', JSON.stringify(userSettings), ' Reloading Page...');
+            location.reload()
+          };
+        </script>
+    </h3>
+      <a href="https://www.neocities.org"><img src="/assets/img/png/badges/neocities.png"></a>
+      <br>
+      <!-- <img src="/assets/img/jpg/edwardSnowdenQuoteCropped.jpg"><br> -->
+      <a href="https://upgradefromwindows.org"><img src="//static.fsf.org/fsforg/graphics/windows-infographic_share.png" alt="Close Windows, Open Doors"/></a><br>
+      <img src="/assets/img/gif/dsc.gif"/>
+      <img src="/assets/img/gif/ff.gif"/>
+      <img src="/assets/img/gif/i2p.gif"/>
+      <img src="/assets/img/gif/ia.gif"/>
+      <img src="/assets/img/gif/ip.gif"/>
+      <img src="/assets/img/gif/jf.gif"/>
+      <img src="/assets/img/gif/lb.gif"/>
+      <img src="/assets/img/gif/mst1.gif"/>
+      <!--<a href="https://www.librewolf.net"><img src="/assets/img/png/badges/LibrewolfBadge.png"></a>-->
+      <img src="/assets/img/png/r2r.png"/><br>
+      Like what you see? Please consider giving an internet!<br>
+      <a href='http://internetometer.com/give/51702'><img src='http://internetometer.com/image/51702.png'/></a><br>
+      <a href="/assets/txt/faviconInfo.txt">favicon info</a>
+  </body>
+</html>
