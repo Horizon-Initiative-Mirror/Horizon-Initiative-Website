@@ -18,7 +18,7 @@
         <option value="/assets/css/dark2.css">Dark Theme B (Black BG Grey FG)</option>
     </select>
     <br>
-    <p>More Settings Coming Soon!</p>
+    <!-- <p>More Settings Coming Soon!</p> -->
     <!-- Button to Save Settings -->
     <button id="saveBtn">Save Settings</button>
 
@@ -26,9 +26,7 @@
       // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
         document.getElementById('saveBtn').onclick = function() {
             const userSettings = {
-                //test username: document.getElementById('username').value,
-                //notifications: document.getElementById('notifications').checked,
-                //contact: document.querySelector('input[name="contact"]:checked').value,
+                settingsVersion: 0
                 theme: document.getElementById('theme').value
             };
             localStorage.setItem("userSettings",JSON.stringify(userSettings))
