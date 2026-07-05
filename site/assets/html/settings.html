@@ -26,12 +26,12 @@
       // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
         document.getElementById('saveBtn').onclick = function() {
             const userSettings = {
-                settingsVersion: 0
+                settingsVersion: 0,
                 theme: document.getElementById('theme').value
             };
             localStorage.setItem("userSettings",JSON.stringify(userSettings))
             console.log('Saved Settings:', JSON.stringify(userSettings), ' Reloading Page...');
-            location.reload()
+            location.reload();
         };
     // @license-end
     </script>

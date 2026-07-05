@@ -29,7 +29,8 @@
         <script>
           document.getElementById('saveBtn').onclick = function() {
             const userSettings = {
-              theme: "/assets/css/dark1.css" //document.getElementById('theme').value
+                settingsVersion: 0;
+                theme: "/assets/css/dark1.css" //document.getElementById('theme').value
             };
             localStorage.setItem("userSettings",JSON.stringify(userSettings))
             console.log('Saved Settings:', JSON.stringify(userSettings), ' Reloading Page...');
