@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         localStorage.setItem("userSettings", JSON.stringify(userSettings));
         console.log("Saved Settings:", JSON.stringify(userSettings), " Reloading Page...");
+        location.reload()
     }
 });
 // @license-end
