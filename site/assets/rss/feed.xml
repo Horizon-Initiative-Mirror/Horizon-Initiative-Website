@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-  <title>{The Name of your Blog}</title>
-  <description>{A short description of your blog}</description>
-  <link>{Link to your homepage}</link>
+  <title>Horizon Initiative</title>
+  <description>The Official Horizon Initiative RSS Feed</description>
+  <link>https://horizon-initiative.neocities.org</link>
   <lastBuildDate>
-    Sun, 26 Jul 2026 19:47:28 -0600
+    Sun, 26 Jul 2026 19:58:09 -0600
   </lastBuildDate>
   <ttl>1440</ttl>
   <item>
