@@ -38,5 +38,5 @@ function userSettingsFromForm() {
             location.reload();
         };
 
-document.addEventListener("DOMContentLoaded", handlePageLoad());
+window.addEventListener("load", handlePageLoad());
 // @license-end
