@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link href="/assets/css/light1.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/assets/css/dark1.css" rel="stylesheet" type="text/css" media="all" id="theme">
+    <link href="/assets/css/fontset1.css" rel="stylesheet" type="text/css" media="all" id="fontset">
     <link href="/assets/css/global.css" rel="stylesheet" type="text/css" media="all">
     <script src="/assets/js/apply.js" defer></script>
   </head>
@@ -19,21 +20,10 @@
         <option value="/assets/css/dark1.css">Dark Theme A (Black BG White BG)</option>
         <option value="/assets/css/dark2.css">Dark Theme B (Black BG Grey FG)</option>
     </select>
+    <select id="fontset" name="theme">
+        <option value="/assets/css/light1.css">Fontset 1 (Default)</option>
+    </select>
     <br>
-    <button id="saveBtn">Save Settings</button>
-
-    <script>
-      // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&dn=gpl-3.0.txt GPL-v3-or-Later
-        document.getElementById('saveBtn').onclick = function() {
-            const userSettings = {
-                settingsVersion: 0,
-                theme: document.getElementById('theme').value
-            };
-            localStorage.setItem("userSettings",JSON.stringify(userSettings))
-            console.log('Saved Settings:', JSON.stringify(userSettings), ' Reloading Page...');
-            location.reload();
-        };
-    // @license-end
-    </script>
+    <button id="saveBtn" onclick="userSettingsFromForm()">Save Settings</button>
   </body>
 </html>
