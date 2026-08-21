@@ -1,6 +1,6 @@
 #!/bin/bash
 TEMP=2
-dialog --yesno "Do you wish to push changes to NeoCities (This may take a long time, see README.txt or https://horizon-initiative.neocities.org/assets/html/contrib.html for more information)" 0 0 2> "$TEMP"
+dialog --yesno "Do you wish to push changes to NeoCities (This may take a long time, see README.txt or https://horizon-initiative.neocities.org/assets/html/contrib.html for more information)" 0 0 2>$TEMP
 CHOICE=`cat $TEMP`
 case $CHOICE in
     0)
