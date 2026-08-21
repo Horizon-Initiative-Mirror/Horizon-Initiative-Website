@@ -2,7 +2,7 @@
 TEMP=2
 dialog --yesno "Do you wish to push changes to NeoCities (This may take a long time, see README.txt or https://horizon-initiative.neocities.org/assets/html/contrib.html for more information)" 0 0
 EXIT_CODE=$?
-echo $EXIT_CODE
+clear
 case $EXIT_CODE in
     0)
     neocities push --prune ./site
@@ -11,5 +11,6 @@ case $EXIT_CODE in
     echo "Skipping Neocities push!"
     ;;
     *)
+    echo "An internal error has occurred in the pre-push hook!"
     exit 1
 esac
