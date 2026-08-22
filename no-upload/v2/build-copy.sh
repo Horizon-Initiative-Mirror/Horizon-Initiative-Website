@@ -1,3 +1,3 @@
 #!/bin/bash
-npx @11ty/eleventy
-cp _site/ ../../site/v2/ -v
+npx eleventy
+cp _site/ ../../site/v2/ -r -v
