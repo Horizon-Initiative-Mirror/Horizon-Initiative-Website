@@ -6,9 +6,9 @@ module.exports = function (eleventyConfig) {
     htmlTemplateEngine: "liquid",
 
     dir: {
-      input: "site-in",
+      input: "./site-in",
       output: "../site",
-      includes: "_includes"
+      includes: "./site-in/_includes"
     }
   };
 };
