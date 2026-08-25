@@ -1,0 +1,21 @@
+---
+title: Settings
+layout: base.html
+---
+<h1>Settings</h1>
+    <noscript>
+        <h1>Some features on this website require JavaScript, however, it appears your browser does not support JavaScript or it is disabled. These features will not work without JavaScript!</h1>
+    </noscript>
+    <label for="theme">Theme:</label>
+    <select id="theme" name="theme">
+        <option value="/assets/css/light1.css">Light (White BG Black FG) (Default)</option>
+        <option value="/assets/css/dark1.css">Dark Theme A (Black BG White BG)</option>
+        <option value="/assets/css/dark2.css">Dark Theme B (Black BG Grey FG)</option>
+    </select>
+    <br>
+    <label for="fontset">Fontset:</>
+    <select id="fontset" name="fontset">
+        <option value="/assets/css/light1.css">Fontset 1 (Default)</option>
+    </select>
+    <br>
+    <button id="saveBtn" onclick="userSettingsFromForm()">Save Settings</button>
