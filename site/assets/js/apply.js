@@ -31,8 +31,8 @@ function handlePageLoad() {
 
 function userSettingsFromForm() {
             let userSettings = defaultUserSettings
-            userSettings.theme = document.getElementById('theme').value
-            userSettings.fontset = document.getElementById('fontset').value
+            userSettings.theme = document.getElementById('themeDialog').value
+            userSettings.fontset = document.getElementById('fontsetDialog').value
             localStorage.setItem("userSettings",JSON.stringify(userSettings))
             console.log('Saved Settings:', JSON.stringify(userSettings), ' Reloading Page...');
             location.reload();
