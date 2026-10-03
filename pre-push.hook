@@ -6,10 +6,11 @@ EXIT_CODE=$?
 clear
 case $EXIT_CODE in
     0)
-    neocities push --prune ./site || dialog --msgbox "An error has occurred!" 0 0
+    neocities push --prune ./site || dialog --msgbox "An error occurred while pushing to NeoCities! Please try again later." 0 0
+    clear
     ;;
     1)
-    echo "Skipping Neocities push!"
+    dialog --infobox "Skipping Neocities push!" 0 0
     ;;
     *)
     echo "An internal error has occurred in the pre-push hook!"
