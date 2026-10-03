@@ -1,12 +1,12 @@
 #!/bin/bash
 TEMP=2
 dialog --yesno "Did you build the site before pushing?" 0 0 && echo "Good" || exit 1
-dialog --yesno "Do you wish to push changes to NeoCities (This may take a long time, see README.txt or https://horizon-initiative.neocities.org/assets/html/contrib.html for more information)" 0 0
+dialog --yesno "Do you wish to push changes to NeoCities (This may take a long time)" 0 0
 EXIT_CODE=$?
 clear
 case $EXIT_CODE in
     0)
-    neocities push --prune ./site
+    neocities push --prune ./site || dialog --msgbox "An error has occurred!" 0 0
     ;;
     1)
     echo "Skipping Neocities push!"
