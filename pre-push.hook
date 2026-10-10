@@ -6,13 +6,13 @@ EXIT_CODE=$?
 clear
 case $EXIT_CODE in
     0)
-    neocities push --prune ./site
-    echo "Press any key to continue..."
+    neocities push --prune ./site || echo "An error occurred while pushing to NeoCities!"
+    #echo "Press any key to continue..."
  
     # -s: Do not echo input coming from a terminal
     # -n 1: Read one character
-    read -s -n 1
-    clear
+    #read -s -n 1
+    #clear
     ;;
     1)
     dialog --infobox "Skipping Neocities push!" 0 0
