@@ -1,3 +1,3 @@
 body {
-    font-family: "Roboto", "Verdana", "Arial", "Times New Roman"
+    font-family: "Liberation Sans", "Roboto", "Arial" \\ Fuck Arial, proprietary bullshit, but we do need to keep compatibility for browsers that do not support our preferred fonts.
 }
